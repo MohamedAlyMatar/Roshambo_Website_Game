@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Rock-Paper-Scissors</title>
-	
-	<link rel="stylesheet" type="text/css" href="rps.css">
-	<script type="text/javascript" src="rps.js"></script>	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rock-Paper-Scissors</title>
+
+    <link rel="stylesheet" type="text/css" href="rps.css">
+    <script type="text/javascript" src="rps.js"></script>
 </head>
 
 <body onload="typename()">
-	
-	<div class="header">
-		<h2>Let's play ja jan ken po !</h2>
-	</div>
 
-	<div class="body">
+    <div class="header">
+        <h2>Let's play ja jan ken po !</h2>
+    </div>
 
-		<div class="PlaySide">
-			<h3>Player's Name: </h3>
-			<h2 id="playerName"> </h2>
+    <div class="body">
 
-			<div class="button"> <img class="items" src="pics/rock.png" alt=" Rock" value="rock" id="p" onclick="rock()"> </div>
+        <div class="PlaySide">
+            <h3>Player's Name: </h3>
+            <h2 id="playerName"> </h2>
 
-			<div class="button"> <img class="items" src="pics/paper.png" alt=" Paper" value="paper" id="p" onclick="paper()"> </div>
+            <div class="button"> <img class="items" src="pics/rock.png" alt=" Rock" value="rock" id="p" onclick="rock()"> </div>
 
-			<div class="button"> <img class="items" src="pics/scissors.png" alt=" Scissors" value="scissors" id="p" onclick="scissors()"> </div>
-		</div>
+            <div class="button"> <img class="items" src="pics/paper.png" alt=" Paper" value="paper" id="p" onclick="paper()"> </div>
 
-		<div class="ScoreSide" id="scoreboard">
-			<h3>Score: </h3>
-			<h2 id="score"> </h2>
+            <div class="button"> <img class="items" src="pics/scissors.png" alt=" Scissors" value="scissors" id="p" onclick="scissors()"> </div>
+        </div>
 
-			<div class="button"> <img class="items" src="pics/question_mark.png" alt=" Player's choice" value="" id="plc"> </div>
+        <div class="ScoreSide" id="scoreboard">
+            <h3>Score: </h3>
+            <h2 id="score"> </h2>
 
-			<div class="button"> <img class="items" src="pics/question_mark.png" alt=" Computer's choice" value="" id="clc"> </div>
+            <div class="button"> <img class="items" src="pics/question_mark.png" alt=" Player's choice" value="" id="plc"> </div>
+
+            <div class="button"> <img class="items" src="pics/question_mark.png" alt=" Computer's choice" value="" id="clc"> </div>
 
 
-			<div class="button"> <img class="control" src="pics/play.png" alt=" start" id="start" onclick="play()"> </div>
+            <div class="button"> <img class="control" src="pics/play.png" alt=" start" id="start" onclick="play()"> </div>
 
-			<div class="button"> <img class="control" src="pics/refresh.png" alt=" retry" id="retry" onclick="location.reload()"> </div>
-		</div>
+            <div class="button"> <img class="control" src="pics/refresh.png" alt=" retry" id="retry" onclick="location.reload()"> </div>
+        </div>
 
-		<div class="PlaySide">
-			<h3>Your Opponent: </h3>
-			<h2 id="oppoName"> </h2>
+        <div class="PlaySide">
+            <h3>Your Opponent: </h3>
+            <h2 id="oppoName"> </h2>
 
-			<div class="button"> <img class="items" src="pics/rock.png" alt=" Rock" value="rock" id="Crock"> </div>
+            <div class="button"> <img class="items" src="pics/rock.png" alt=" Rock" value="rock" id="Crock"> </div>
 
-			<div class="button"> <img class="items" src="pics/paper.png" alt=" Paper" value="paper" id="Cpaper"> </div>
+            <div class="button"> <img class="items" src="pics/paper.png" alt=" Paper" value="paper" id="Cpaper"> </div>
 
-			<div class="button"> <img class="items" src="pics/scissors.png" alt=" Scissors" value="scissors" id="Cscissors"> </div>
-		</div>
-	
-	</div>
+            <div class="button"> <img class="items" src="pics/scissors.png" alt=" Scissors" value="scissors" id="Cscissors"> </div>
+        </div>
 
-	<footer>
-		<div>
-			<ul>
-				<li>Contacts:<br>LinkedIn<br>GitHub<br>Instagram</li>
-		    </ul>
-	    </div>
-	</footer>
+    </div>
+
+    <footer>
+        <div>
+            <p>&copy; Roshambo Website. All rights reserved.</p>
+            <p>Email: </p>
+            <p>Phone: </p>
+        </div>
+    </footer>
 
 </body>
+
 </html>
