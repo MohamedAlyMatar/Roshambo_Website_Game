@@ -8,9 +8,16 @@ body {
     margin: 0;
     font-family: monospace;
     min-height: 100vh;
+    ;
+}
+
+.main-container {
     display: flex;
     flex-direction: column;
 }
+
+
+/* header */
 
 .header {
     text-align: center;
@@ -28,14 +35,34 @@ body {
     padding: 20px;
 }
 
+
+/* body */
+
 .body {
     margin: 10px;
     height: auto;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.PlaySide {
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .body {
+        display: flex;
+        flex-direction: column;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.controls {
     margin: 10px;
     padding: 10px;
     background: #537EC5;
@@ -57,13 +84,15 @@ body {
     color: white;
 }
 
-.ScoreSide {
+.scoreboard {
     margin: 10px;
     padding: 10px;
     background: #F39422;
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
+    height: 350px;
 }
 
 .items {
@@ -71,24 +100,23 @@ body {
     height: 100px;
 }
 
-.control {
+.option-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.options {
     width: 50px;
     height: 50px;
 }
 
 
-/* Footer style */
+/* footer */
 
 footer {
-    font-family: monospace;
     background: #000000;
     color: white;
     position: relative;
-    padding: 1rem;
-    bottom: 0;
-    margin-top: auto;
+    padding: 10px;
     text-align: center;
 }
-
-
-/* End of Footer style */

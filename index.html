@@ -11,58 +11,59 @@
 </head>
 
 <body onload="typename()">
+    <div class="main-container">
 
-    <div class="header">
-        <h2>Let's play ja jan ken po !</h2>
+        <div class="header">
+            <h2>Let's play ja jan ken po !</h2>
+        </div>
+
+        <div class="body">
+
+            <div class="controls">
+                <h3>Player's Name: </h3>
+                <h2 id="playerName"> </h2>
+                <div class="buttons">
+                    <div class="button"> <img class="items" src="pics/rock.png" alt=" Rock" value="rock" id="p" onclick="rock()"> </div>
+                    <div class="button"> <img class="items" src="pics/paper.png" alt=" Paper" value="paper" id="p" onclick="paper()"> </div>
+                    <div class="button"> <img class="items" src="pics/scissors.png" alt=" Scissors" value="scissors" id="p" onclick="scissors()"> </div>
+                </div>
+            </div>
+
+            <div class="scoreboard" id="scoreboard">
+                <h3>Score: </h3>
+                <h2 id="score"> </h2>
+                <div class="option-buttons">
+
+                    <div class="button"> <img class="items" src="pics/question_mark.png" alt=" Player's choice" value="" id="plc"> </div>
+                    <div class="button"> <img class="items" src="pics/question_mark.png" alt=" Computer's choice" value="" id="clc"> </div>
+                </div>
+
+                <div class="option-buttons">
+                    <div class="button"> <img class="options" src="pics/play.png" alt=" start" id="start" onclick="play()"> </div>
+                    <div class="button"> <img class="options" src="pics/refresh.png" alt=" retry" id="retry" onclick="location.reload()"> </div>
+                </div>
+            </div>
+
+
+            <div class="controls">
+                <h3>Your Opponent: </h3>
+                <h2 id="oppoName"> </h2>
+                <div class="buttons">
+                    <div class="button"> <img class="items" src="pics/rock.png" alt=" Rock" value="rock" id="Crock"> </div>
+                    <div class="button"> <img class="items" src="pics/paper.png" alt=" Paper" value="paper" id="Cpaper"> </div>
+                    <div class="button"> <img class="items" src="pics/scissors.png" alt=" Scissors" value="scissors" id="Cscissors"> </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div>
+                <p>&copy; Copyright for Roshambo Website @ Mohamed Matar</p>
+            </div>
+        </footer>
+
     </div>
-
-    <div class="body">
-
-        <div class="PlaySide">
-            <h3>Player's Name: </h3>
-            <h2 id="playerName"> </h2>
-
-            <div class="button"> <img class="items" src="pics/rock.png" alt=" Rock" value="rock" id="p" onclick="rock()"> </div>
-
-            <div class="button"> <img class="items" src="pics/paper.png" alt=" Paper" value="paper" id="p" onclick="paper()"> </div>
-
-            <div class="button"> <img class="items" src="pics/scissors.png" alt=" Scissors" value="scissors" id="p" onclick="scissors()"> </div>
-        </div>
-
-        <div class="ScoreSide" id="scoreboard">
-            <h3>Score: </h3>
-            <h2 id="score"> </h2>
-
-            <div class="button"> <img class="items" src="pics/question_mark.png" alt=" Player's choice" value="" id="plc"> </div>
-
-            <div class="button"> <img class="items" src="pics/question_mark.png" alt=" Computer's choice" value="" id="clc"> </div>
-
-
-            <div class="button"> <img class="control" src="pics/play.png" alt=" start" id="start" onclick="play()"> </div>
-
-            <div class="button"> <img class="control" src="pics/refresh.png" alt=" retry" id="retry" onclick="location.reload()"> </div>
-        </div>
-
-        <div class="PlaySide">
-            <h3>Your Opponent: </h3>
-            <h2 id="oppoName"> </h2>
-
-            <div class="button"> <img class="items" src="pics/rock.png" alt=" Rock" value="rock" id="Crock"> </div>
-
-            <div class="button"> <img class="items" src="pics/paper.png" alt=" Paper" value="paper" id="Cpaper"> </div>
-
-            <div class="button"> <img class="items" src="pics/scissors.png" alt=" Scissors" value="scissors" id="Cscissors"> </div>
-        </div>
-
-    </div>
-
-    <footer>
-        <div>
-            <p>&copy; Roshambo Website. All rights reserved.</p>
-            <p>Email: </p>
-            <p>Phone: </p>
-        </div>
-    </footer>
 
 </body>
 
